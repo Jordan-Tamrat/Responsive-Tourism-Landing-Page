@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <title>Tourism Landing Page</title>
+  <style>
+  html {
+    scroll-behavior: smooth;
+  }
+  </style>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+    <h1 class="logo">
+        <a href="#home" class="logo-link">
+        <img src="images/logo.png" alt="explore ethiopia Logo" class="logo-img" />
+        </a>
+    </h1>
+
+
+      <button id="menu-toggle" class="hamburger" aria-label="Menu">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#destination">Destinations</a></li>
+        <li><a href="#culture">Culture</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <h2>Discover the Heart of Africa</h2>
+      <p>Experience Ethiopia’s rich culture, breathtaking landscapes, and ancient history.</p>
+      <a href="#destination" class="cta-btn">Explore Now</a>
+    </div>
+  </header>
+
+  <!-- Destination Section -->
+  <section id="destination">
+    <h2>Popular Destinations</h2>
+    <label for="places">Choose a destination:</label>
+    <select id="places">
+      <option value="" disabled selected>destination</option>
+      <option value="lalibela">Lalibela</option>
+      <option value="axum">Axum</option>
+      <option value="simien">Simien Mountains</option>
+     <option value="danakil">Danakil Depression</option>
+    </select>
+    <div id="destination-info">
+      <!-- Will show image and description on selection -->
+       <p>Choose a destination to see details.</p>
+    </div>
+  </section>
+
+  <!-- Culture Section -->
+ <section id="culture">
+  <h2>Ethiopian Culture</h2>
+  <p>
+    Ethiopia’s cultural heritage is one of the oldest and most diverse in Africa, with over 80 ethnic groups and languages. Its traditions are expressed through vibrant festivals, flavorful cuisine, colorful clothing, and joyful music and dance.
+  </p>
+
+  <div class="culture-grid">
+
+    <div class="culture-item">
+      <img src="images/timket.jpg" alt="Timket Festival" />
+      <h3>Festivals</h3>
+      <p>
+        Festivals like <strong>Timket</strong> (Epiphany) and <strong>Meskel</strong> (Finding of the True Cross) are celebrated with colorful processions, dancing, and traditional rituals that attract people from around the world.
+      </p>
+    </div>
+
+    <div class="culture-item">
+      <img src="images/injera-and-doro-wat.webp" alt="Injera and traditional dishes" />
+      <h3>Traditional Food</h3>
+      <p>
+        Ethiopian cuisine features dishes like <strong>injera</strong> (a sour flatbread) served with spicy stews such as <strong>doro wat</strong> (chicken stew) and <strong>shiro</strong>. Meals are shared from a single plate, symbolizing unity.
+      </p>
+    </div>
+
+    <div class="culture-item">
+      <img src="images/habesha-clothes.jpg" alt="Traditional Ethiopian clothing" />
+      <h3>Clothing</h3>
+      <p>
+        Ethiopians wear traditional attire known as <strong>Habesha kemis</strong>, often white with colorful embroidery. These garments are worn during holidays, weddings, and religious ceremonies.
+      </p>
+    </div>
+
+    <div class="culture-item">
+      <img src="images/ethiopian-dance(eskesta).jpg" alt="Ethiopian dance Eskista" />
+      <h3>Music & Dance</h3>
+      <p>
+        Traditional music varies by region, often featuring instruments like the <strong>krar</strong> and <strong>masenqo</strong>. Dances such as <strong>Eskista</strong> involve expressive shoulder movements and rhythmic drumming.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Gallery Section -->
+<section id="gallery">
+  <h2>Gallery</h2>
+  <p>Discover Ethiopia’s stunning landscapes, ancient architecture, and vibrant culture through our visual journey.</p>
+  <div class="gallery-grid">
+    <img src="images/lalibela.jpg" alt="Rock-hewn Churches of Lalibela">
+    <img src="images/axum.jpg" alt="Obelisk of Axum">
+    <img src="images/simien.jpg" alt="Simien Mountains View">
+    <img src="images/danakil.jpg" alt="Colorful Sulfur Springs in Danakil">
+    <img src="images/timket.jpg" alt="Timket Festival Crowd">
+    <img src="images/ethiopian-dance(eskesta).jpg" alt="Traditional Ethiopian Dance">
+  </div>
+</section>
+
+ <!-- About Section -->
+<section id="about">
+  <h2>About Explore Ethiopia</h2>
+  <p>
+    <strong>Explore Ethiopia</strong> is a tourism-focused initiative aimed at showcasing the diverse natural beauty, history, and culture of Ethiopia. Whether you are drawn to the towering mountains of the north, the ancient ruins of Axum, or the lively festivals of Addis Ababa, our goal is to inspire your next adventure.
+  </p>
+  <p>
+    We aim to provide visitors with a glimpse into the soul of Ethiopia — its people, landscapes, cuisine, and traditions — through an immersive and informative experience.
+  </p>
+</section>
+
+ <!-- C0ntact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>If you have questions, feedback, or would like to plan a trip, feel free to reach out to us.</p>
+
+  <form action="#" method="post" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+    </div>
+
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Explore Ethiopia. All rights reserved.</p>
+  </footer>
+<script src="index.js"></script>
+</body>
+</html>
